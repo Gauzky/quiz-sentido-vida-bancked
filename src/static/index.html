@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Valorização e Sentido da Vida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz: Valorização e Sentido da Vida</h1>
+            <p class="subtitle">Reflita sobre o que realmente importa em sua jornada</p>
+        </header>
+
+        <div id="quiz-form">
+            <!-- Seção de Informações Pessoais -->
+            <section class="section info-section">
+                <div class="gif-container">
+                    <img src="gifs/gif1.gif" alt="GIF Motivacional" class="gif">
+                </div>
+                <h2>Bem-vindo(a)!</h2>
+                <p class="intro-text">Este quiz foi criado para ajudá-lo a refletir sobre a valorização e o sentido da vida. Reserve alguns minutos para responder com sinceridade.</p>
+                
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="curso">Seu Curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecione seu curso</option>
+                        <option value="Administração">Administração</option>
+                        <option value="Nutrição">Nutrição</option>
+                        <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Química">Química</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Perguntas de Múltipla Escolha -->
+            <section class="section">
+                <div class="gif-container">
+                    <img src="gifs/gif2.gif" alt="GIF Inspirador" class="gif">
+                </div>
+                <h2>Parte 1: Reflexões sobre Suas Escolhas</h2>
+                
+                <div class="question">
+                    <p class="question-text"><strong>1.</strong> Qual das seguintes ações melhor representa a valorização do tempo em sua vida?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a" required> Passar a maior parte do tempo em redes sociais</label>
+                        <label><input type="radio" name="q1" value="b"> Investir em aprendizado contínuo e novas experiências</label>
+                        <label><input type="radio" name="q1" value="c"> Focar exclusivamente no trabalho para acumular bens materiais</label>
+                        <label><input type="radio" name="q1" value="d"> Evitar compromissos para ter mais tempo livre</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>2.</strong> Ao enfrentar um desafio significativo, qual é a atitude mais construtiva?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a" required> Desistir e procurar uma alternativa mais fácil</label>
+                        <label><input type="radio" name="q2" value="b"> Ignorar o problema e esperar que ele se resolva sozinho</label>
+                        <label><input type="radio" name="q2" value="c"> Analisar a situação, buscar soluções e aprender com a experiência</label>
+                        <label><input type="radio" name="q2" value="d"> Culpar os outros pela dificuldade</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>3.</strong> O que significa ter um propósito de vida para você?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a" required> Ter uma carreira de sucesso e reconhecimento social</label>
+                        <label><input type="radio" name="q3" value="b"> Contribuir para algo maior que si mesmo e encontrar significado nas ações</label>
+                        <label><input type="radio" name="q3" value="c"> Acumular riquezas e viver confortavelmente</label>
+                        <label><input type="radio" name="q3" value="d"> Viver sem preocupações ou responsabilidades</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>4.</strong> Como você lida com momentos de incerteza ou mudança?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a" required> Fico paralisado pelo medo e evito qualquer decisão</label>
+                        <label><input type="radio" name="q4" value="b"> Vejo como uma oportunidade para crescer e me adaptar</label>
+                        <label><input type="radio" name="q4" value="c"> Reclamo da situação e desejo que tudo volte ao normal</label>
+                        <label><input type="radio" name="q4" value="d"> Busco culpados para a incerteza</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>5.</strong> Qual a importância de cultivar relacionamentos saudáveis em sua jornada?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a" required> É secundário; o foco deve ser no desenvolvimento individual</label>
+                        <label><input type="radio" name="q5" value="b"> Essencial para o bem-estar emocional e para compartilhar experiências</label>
+                        <label><input type="radio" name="q5" value="c"> Apenas útil para obter favores ou vantagens</label>
+                        <label><input type="radio" name="q5" value="d"> Pode ser uma distração dos objetivos pessoais</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Perguntas Verdadeiro ou Falso -->
+            <section class="section">
+                <div class="gif-container">
+                    <img src="gifs/gif3.gif" alt="GIF Reflexivo" class="gif">
+                </div>
+                <h2>Parte 2: Verdadeiro ou Falso</h2>
+                
+                <div class="question">
+                    <p class="question-text"><strong>6.</strong> A busca pela felicidade é um destino final, e não um processo contínuo de autodescoberta e crescimento.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="verdadeiro" required> Verdadeiro</label>
+                        <label><input type="radio" name="q6" value="falso"> Falso</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>7.</strong> Pequenas ações diárias de gratidão podem impactar positivamente a percepção do sentido da vida.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="verdadeiro" required> Verdadeiro</label>
+                        <label><input type="radio" name="q7" value="falso"> Falso</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>8.</strong> É possível encontrar significado em experiências difíceis e transformá-las em aprendizado.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="verdadeiro" required> Verdadeiro</label>
+                        <label><input type="radio" name="q8" value="falso"> Falso</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>9.</strong> A comparação constante com a vida de outras pessoas é um caminho saudável para a autoaceitação.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="verdadeiro" required> Verdadeiro</label>
+                        <label><input type="radio" name="q9" value="falso"> Falso</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>10.</strong> O autoconhecimento é fundamental para entender seus valores e direcionar suas escolhas de vida.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q10" value="verdadeiro" required> Verdadeiro</label>
+                        <label><input type="radio" name="q10" value="falso"> Falso</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Perguntas Abertas -->
+            <section class="section">
+                <div class="gif-container">
+                    <img src="gifs/gif4.gif" alt="GIF Motivacional" class="gif">
+                </div>
+                <h2>Parte 3: Suas Reflexões Pessoais</h2>
+                
+                <div class="question">
+                    <p class="question-text"><strong>11.</strong> Descreva uma situação em que você sentiu que suas ações tiveram um impacto positivo na vida de alguém ou em uma causa que você acredita.</p>
+                    <textarea name="q11" rows="4" required></textarea>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>12.</strong> Qual é o seu maior sonho ou aspiração para o futuro e como você planeja alcançá-lo, mantendo seus valores em mente?</p>
+                    <textarea name="q12" rows="4" required></textarea>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>13.</strong> Se você pudesse dar um conselho a si mesmo no passado sobre como viver uma vida mais plena e significativa, qual seria?</p>
+                    <textarea name="q13" rows="4" required></textarea>
+                </div>
+
+                <div class="question">
+                    <p class="question-text"><strong>14.</strong> Em sua opinião, qual o papel da educação (ou do seu curso escolhido) na construção de um futuro mais valoroso para você e para a sociedade?</p>
+                    <textarea name="q14" rows="4" required></textarea>
+                </div>
+            </section>
+
+            <!-- Botão de Envio -->
+            <section class="section submit-section">
+                <div class="gif-container">
+                    <img src="gifs/gif5.gif" alt="GIF Final" class="gif">
+                </div>
+                <button type="button" id="submit-btn" class="submit-btn">Enviar Respostas</button>
+            </section>
+        </div>
+
+        <!-- Mensagem de Sucesso -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <h2>Obrigado por participar!</h2>
+            <p>Suas respostas foram enviadas com sucesso. Continue refletindo sobre o sentido da vida e valorize cada momento!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

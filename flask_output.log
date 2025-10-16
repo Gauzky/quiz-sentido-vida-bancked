@@ -1,0 +1,21 @@
+nohup: ignoring input
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-394-711
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /gifs/gif2.gif HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /gifs/gif1.gif HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /gifs/gif3.gif HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /gifs/gif4.gif HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /gifs/gif5.gif HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:17:53] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [16/Oct/2025 02:21:46] "[35m[1mPOST /api/quiz/submit HTTP/1.1[0m" 201 -
