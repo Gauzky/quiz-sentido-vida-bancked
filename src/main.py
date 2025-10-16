@@ -1,9 +1,10 @@
 import os
 import sys
+from flask import Flask, send_from_directory, send_file
+
 # DON'T CHANGE THIS !!!
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from flask import Flask, send_from_directory
 from src.models.user import db
 from src.models.quiz_response import QuizResponse
 from src.routes.user import user_bp
@@ -32,12 +33,19 @@ def serve(path):
     if path != "" and os.path.exists(os.path.join(static_folder_path, path)):
         return send_from_directory(static_folder_path, path)
     else:
+ 
         index_path = os.path.join(static_folder_path, 'index.html')
         if os.path.exists(index_path):
             return send_from_directory(static_folder_path, 'index.html')
         else:
             return "index.html not found", 404
 
+@app.route('/download-db')
+def download_db():
+    db_path = os.path.join(app.root_path, 'src', 'database', 'app.db')
+    if os.path.exists(db_path):
+        return send_file(db_path, as_attachment=True)
+    return "Arquivo de banco de dados não encontrado.", 404
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
